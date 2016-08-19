@@ -15,6 +15,7 @@
 		E94782171D67238E00D8A49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94782151D67238E00D8A49A /* LaunchScreen.storyboard */; };
 		E94782221D67238E00D8A49A /* SYAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E94782211D67238E00D8A49A /* SYAlertControllerTests.m */; };
 		E947822D1D67238E00D8A49A /* SYAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E947822C1D67238E00D8A49A /* SYAlertControllerUITests.m */; };
+		E947823B1D6723C400D8A49A /* SYAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E947823A1D6723C400D8A49A /* SYAlertController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E94782281D67238E00D8A49A /* SYAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E947822C1D67238E00D8A49A /* SYAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAlertControllerUITests.m; sourceTree = "<group>"; };
 		E947822E1D67238E00D8A49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E947823A1D6723C400D8A49A /* SYAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SYAlertController.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E947823B1D6723C400D8A49A /* SYAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		E94782061D67238E00D8A49A /* SYAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				E947823A1D6723C400D8A49A /* SYAlertController.framework */,
 				E947820A1D67238E00D8A49A /* AppDelegate.h */,
 				E947820B1D67238E00D8A49A /* AppDelegate.m */,
 				E947820D1D67238E00D8A49A /* ViewController.h */,
@@ -413,8 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SYAlertController",
+				);
 				INFOPLIST_FILE = SYAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyu.SYAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,8 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SYAlertController",
+				);
 				INFOPLIST_FILE = SYAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyu.SYAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
