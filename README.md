@@ -32,4 +32,6 @@ SYAlertAction *cancel = [SYAlertAction actionWithTitle:@"取消" style:SYActionS
 #注意
 使用控件时，要在[alert show];之前添加按钮，否则按钮添加无效
 
-如有任何问题可联系我  QQ 1102210843  TEL 18610863095
+如有任何问题可联系我  QQ 1102210843  TEL 18610863095  
+
+gitHub: https://github.com/1102210843/SYAlertController

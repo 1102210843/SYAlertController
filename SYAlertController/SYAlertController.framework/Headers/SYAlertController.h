@@ -5,6 +5,8 @@
 //  Created by 孙宇 on 16/8/19.
 //  Copyright © 2016年 孙宇. All rights reserved.
 //
+//  GitHub: https://github.com/1102210843/SYAlertController
+//
 
 #import <UIKit/UIKit.h>
 
