@@ -423,7 +423,7 @@
 				);
 				INFOPLIST_FILE = SYAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyu.SYAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -439,7 +439,7 @@
 				);
 				INFOPLIST_FILE = SYAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyu.SYAlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -512,6 +512,7 @@
 				E94782331D67238E00D8A49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E94782341D67238E00D8A49A /* Build configuration list for PBXNativeTarget "SYAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				E94782361D67238E00D8A49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E94782371D67238E00D8A49A /* Build configuration list for PBXNativeTarget "SYAlertControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				E94782391D67238E00D8A49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
