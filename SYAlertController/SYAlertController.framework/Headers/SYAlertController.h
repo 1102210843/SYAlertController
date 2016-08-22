@@ -92,24 +92,14 @@ typedef void(^SYActionBlock)(SYAlertAction *action);
 /**
  *  弹窗控件初始化
  *
- *  @param title   标题
- *  @param message 内容
+ *  @param title   标题 可使用 NSString 和 NSAttributedString
+ *  @param message 内容 可使用 NSString 和 NSAttributedString
  *  @param style   风格
  *
  *  @return 返回弹窗实例
  */
-+ (instancetype)sharedWithTitle:(NSString *)title message:(NSString *)message style:(SYAlertStyle)style;
++ (instancetype)sharedWithTitle:(id)title message:(id)message style:(SYAlertStyle)style;
 
-/**
- *  自定制弹窗控件初始化
- *
- *  @param attTitle   标题
- *  @param attMessage 内容
- *  @param style      风格
- *
- *  @return 返回弹窗实例
- */
-+ (instancetype)sharedWithAttTitle:(NSAttributedString *)attTitle attMessage:(NSAttributedString *)attMessage style:(SYAlertStyle)style;
 
 #pragma mark - 添加按钮
 - (void)addAlertAction:(SYAlertAction *)action;

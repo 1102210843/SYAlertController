@@ -5,13 +5,10 @@
 #弹窗的创建
 与系统相同的方式创建控件，包括标题和内容，style支持两种风格SYAlertStyleDefault和SYAlertStyleActionSheet
 
-//普通弹窗
+//创建弹窗，弹窗title和message支持 NSString 和 NSAttributedString，可使用NSAttributedString进行定制
 
 SYAlertController *alert = [SYAlertController sharedWithTitle:@"默认风格标题 三按钮" message:@"默认风格" style:SYAlertStyleDefault];
 
-//自定制弹窗
-
-SYAlertController *alert = [SYAlertController sharedWithAttTitle:attTitle attMessage:attMessage style:SYAlertStyleActionSheet];
 
 #按钮的创建和添加
 按钮同样仿系统方式创建，支持三种类型SYActionStyleCancel、SYActionStyleDefault、SYActionStyleDestructive

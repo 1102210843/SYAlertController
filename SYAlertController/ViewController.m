@@ -148,13 +148,13 @@
     [attTitle addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:22] range:NSMakeRange(0, 5)];
     [attTitle addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(0, 5)];
     
-    NSMutableAttributedString *attMessage = [[NSMutableAttributedString alloc]initWithString:@"自定制弹窗风格"];
-    NSMutableDictionary *messageDict = [NSMutableDictionary dictionary];
-    [messageDict setObject:[UIFont systemFontOfSize:16] forKey:NSFontAttributeName];
-    [messageDict setObject:[UIColor cyanColor] forKey:NSForegroundColorAttributeName];
-    [attMessage addAttributes:messageDict range:NSMakeRange(0, 7)];
-    [attMessage addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:20] range:NSMakeRange(0, 5)];
-    [attMessage addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, 5)];
+//    NSMutableAttributedString *attMessage = [[NSMutableAttributedString alloc]initWithString:@"自定制弹窗风格"];
+//    NSMutableDictionary *messageDict = [NSMutableDictionary dictionary];
+//    [messageDict setObject:[UIFont systemFontOfSize:16] forKey:NSFontAttributeName];
+//    [messageDict setObject:[UIColor cyanColor] forKey:NSForegroundColorAttributeName];
+//    [attMessage addAttributes:messageDict range:NSMakeRange(0, 7)];
+//    [attMessage addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:20] range:NSMakeRange(0, 5)];
+//    [attMessage addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, 5)];
     
     NSMutableAttributedString *attSure = [[NSMutableAttributedString alloc]initWithString:@"确定"];
     NSMutableDictionary *sureDict = [NSMutableDictionary dictionary];
@@ -173,7 +173,7 @@
     [attCancel addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(0, 1)];
     
     
-    SYAlertController *alert = [SYAlertController sharedWithAttTitle:attTitle attMessage:attMessage style:SYAlertStyleActionSheet];
+    SYAlertController *alert = [SYAlertController sharedWithTitle:attTitle message:@"自定制弹窗风格" style:SYAlertStyleActionSheet];
     SYAlertAction *action = [SYAlertAction actionWithAttTitle:attSure style:SYActionStyleDefault handler:^(SYAlertAction *action) {
         NSLog(@"%@", action);
     }];
