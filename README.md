@@ -1,21 +1,33 @@
 # SYAlertController 仿系统弹窗控件
 
-仿系统UIAlertViewController弹窗控件，相同的创建方式，可支持6.0以上系统
+仿系统UIAlertViewController弹窗控件，支持自定制，相同的创建方式，可支持6.0以上系统
 
 #弹窗的创建
+与系统相同的方式创建控件，包括标题和内容，style支持两种风格SYAlertStyleDefault和SYAlertStyleActionSheet
+
+//普通弹窗
 
 SYAlertController *alert = [SYAlertController sharedWithTitle:@"默认风格标题 三按钮" message:@"默认风格" style:SYAlertStyleDefault];
 
-与系统相同的方式创建控件，包括标题和内容，style支持两种风格SYAlertStyleDefault和SYAlertStyleActionSheet
+//自定制弹窗
+
+SYAlertController *alert = [SYAlertController sharedWithAttTitle:attTitle attMessage:attMessage style:SYAlertStyleActionSheet];
 
 #按钮的创建和添加
+按钮同样仿系统方式创建，支持三种类型SYActionStyleCancel、SYActionStyleDefault、SYActionStyleDestructive
+
 创建
 
 SYAlertAction *cancel = [SYAlertAction actionWithTitle:@"取消" style:SYActionStyleCancel handler:^(SYAlertAction *action) {
         NSLog(@"%@", action);
     }];
-    
-按钮同样仿系统方式创建，支持三种类型SYActionStyleCancel、SYActionStyleDefault、SYActionStyleDestructive
+
+按钮同样支持自定制
+
+SYAlertAction *action1 = [SYAlertAction actionWithAttTitle:attCancel style:SYActionStyleCancel handler:^(SYAlertAction *action) {
+NSLog(@"%@", action);
+}];
+
 
 添加
 
