@@ -211,6 +211,7 @@
 				TargetAttributes = {
 					E94782031D67238E00D8A49A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 442GN6Q5NW;
 					};
 					E947821C1D67238E00D8A49A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -417,6 +418,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 442GN6Q5NW;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SYAlertController",
@@ -433,6 +436,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 442GN6Q5NW;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SYAlertController",
